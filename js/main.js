@@ -33,11 +33,9 @@ function decipher(){
         if(keyCtr == key.length){
             keyCtr = 0;
         }    
-        let plainCode= (cipherText.charCodeAt(i) - key.charCodeAt(keyCtr)) % 26;
-        if(plainCode < 0){
-            plainCode += 26;
-        }
+        let plainCode= (cipherText.charCodeAt(i) - key.charCodeAt(keyCtr) + 26) % 26;
         
+
         plainCode += 65;
         keyCtr++;
         let plainChar =  String.fromCharCode(plainCode);
