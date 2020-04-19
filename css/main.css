@@ -2,3 +2,6 @@ input[type = text]{
     border: 1px solid #a9a9a9;
     text-transform: uppercase;
 }
+.computation{
+    display:none;
+}
